@@ -1,10 +1,18 @@
+:root {
+    --navy: #001f3f;
+    --white: #ffffff;
+    --light-blue: #add8e6;
+    --medium-blue: #0074D9;
+    --dark-text: #1c2b3a;
+    --soft-grey: #f4f4f4;
+}
 /* General Styles */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--soft-grey);
+    color: var(--dark-text);
     line-height: 1.6;
 }
 
@@ -19,17 +27,17 @@ body {
 }
 
 .section-title {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--navy);
     padding-bottom: 0.5em;
     margin-bottom: 1.5em;
     font-size: 2em;
-    color: #333;
+    color: var(--navy);
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--navy);
+    color: var(--white);
     padding: 1em 0;
 }
 
@@ -47,7 +55,7 @@ header h1 {
 header p {
     margin: 0;
     font-size: 1em;
-    color: #ddd;
+    color: var(--light-blue);
 }
 
 nav ul {
@@ -62,7 +70,7 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     padding: 0.5em 0.8em;
     border-radius: 5px;
@@ -70,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: var(--medium-blue);
 }
 
 /* Main Content */
@@ -90,10 +98,10 @@ main {
 }
 
 .project-card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--light-blue);
     padding: 15px;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: var(--white);
 }
 
 .project-card h3 {
@@ -111,8 +119,8 @@ main {
 }
 
 .project-tech li {
-    background-color: #eee;
-    color: #555;
+    background-color: var(--light-blue);
+    color: var(--navy);
     padding: 0.3em 0.6em;
     border-radius: 3px;
     font-size: 0.8em;
@@ -121,13 +129,13 @@ main {
 .project-links a {
     display: inline-block;
     margin-right: 1em;
-    color: #007bff;
+    color: var(--medium-blue);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-links a:hover {
-    color: #0056b3;
+    color: var(--navy);
     text-decoration: underline;
 }
 
@@ -146,8 +154,8 @@ main {
 }
 
 .skills-list li {
-    background-color: #ddd;
-    color: #333;
+    background-color: var(--light-blue);
+    color: var(--navy);
     padding: 0.5em 1em;
     border-radius: 5px;
     font-size: 0.9em;
@@ -175,8 +183,8 @@ main {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--navy);
+    color: var(--white);
     text-align: center;
     padding: 1em 0;
     position: relative; /* To contain the container */
