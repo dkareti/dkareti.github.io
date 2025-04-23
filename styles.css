@@ -17,12 +17,21 @@ body {
     line-height: 1.6;
 }
 
-.hdr{
-    color: var(--soft-grey);
+a.hdr {
+    color: white;
+    text-decoration: none; /* Optional: removes underline */
 }
 
-.hdr:hover {
-    transform: scale(1.05);      /* Slightly enlarge */
+a.hdr:visited {
+    color: white;
+}
+
+a.hdr:hover {
+    color: #cccccc; /* Optional: light gray on hover for feedback */
+}
+
+a.hdr:active {
+    color: white;
 }
 
 .btn {
