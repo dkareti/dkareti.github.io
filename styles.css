@@ -34,6 +34,14 @@ a.hdr:active {
     color: white;
 }
 
+.block-seperation {
+    background-color: var(--light-blue);
+
+    color: var(--dark-text);
+
+    
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
