@@ -17,6 +17,14 @@ body {
     line-height: 1.6;
 }
 
+.hdr{
+    color: var(--soft-grey);
+}
+
+.hdr:hover {
+    transform: scale(1.05);      /* Slightly enlarge */
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
