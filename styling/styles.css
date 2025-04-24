@@ -188,8 +188,8 @@ main {
 
     border-radius: 2px;
     border-width: 2px;
-    border-color: var(--navy);
-    background-color: var(--navy);
+    border-color: var(--medium-blue);
+    background-color: var(--medium-blue);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
