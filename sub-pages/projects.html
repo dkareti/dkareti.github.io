@@ -27,12 +27,17 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>Flask User Verification</h3>
-                <p>This project prompts the user their name and birthday. If a valid birthday is given, then 
-                    the user recieves a personalized welcome! Otherwise the user is prompted to try again.
+                <p>This project prompts the user their name and birthday. If a valid birthday is given, then  
+                    the user recieves a personalized welcome, and is placed in an age group! This age group
+                    is determined using an ML model. To reduce redundancy, the model training is stored.
+                    If the birthday is not valid, then the user is prompted to try again. With a succesfull 
+                    operation of the interface, the user can replay as many times as they want.
                 </p>
                 <ul class="project-tech">
                     <li>HTML</li>
                     <li>Flask (i.e., Python)</li>
+                    <li>joblib</li>
+                    <li>sci-kit learn</li>
                     </ul>
                 <div class="project-links">
                     <a href="[link to live demo]" target="_blank">Live Demo</a>
