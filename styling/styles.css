@@ -6,6 +6,7 @@
     --dark-text: #1c2b3a;
     --soft-grey: #f4f4f4;
     --beige-off-white: #f5f5dc;
+    
 }
 /* General Styles */
 body {
@@ -35,7 +36,7 @@ a.hdr:active {
 }
 
 .block-seperation {
-    background-color: var(--beige-off-white);
+    background-color: rgba(245, 245, 220, 0.6);
 
     color: var(--dark-text);
 
