@@ -36,15 +36,10 @@ a.hdr:active {
 }
 
 .block-seperation {
-    background-color: rgba(245, 245, 220, 0.6);
-
-    color: var(--dark-text);
-
-    border-radius: 2px;
-
-    border-width: 3px;
-
-    border-color: #cccccc; 
+    border: 1px solid var(--light-blue);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--white);
 }
 
 .btn {
@@ -190,6 +185,8 @@ main {
 .project-links a:hover {
     color: var(--navy);
     text-decoration: underline;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 /* Skills Section */
