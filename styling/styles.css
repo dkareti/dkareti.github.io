@@ -35,13 +35,13 @@ a.hdr:active {
 }
 
 .block-seperation {
-    background-color: var(--light-blue);
+    background-color: var(--beige-off-white);
 
     color: var(--dark-text);
 
     border-radius: 2px;
 
-    border-width: 1px;
+    border-width: 3px;
 
     border-color: #cccccc; 
 }
