@@ -183,9 +183,13 @@ main {
 }
 
 .project-links a:hover {
-    color: var(--navy);
+    color: var(--white);
     text-decoration: underline;
 
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: var(--navy);
+    background-color: var(--navy);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
