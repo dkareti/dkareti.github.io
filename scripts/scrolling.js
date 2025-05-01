@@ -41,9 +41,9 @@ navLinks.forEach(anchor => {
     const btn = document.getElementById("backToTopBtn");
     btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
       ? "block" : "none";
-  };
+};
 
   // Scroll to the top when the button is clicked
-  function scrollToTop() {
+function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
