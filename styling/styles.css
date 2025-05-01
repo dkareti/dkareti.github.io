@@ -294,6 +294,7 @@ footer .container {
   
   #backToTopBtn:hover {
     background-color: var(--light-blue);
+    color: var(--dark-text);
     transform: scale(1.05);      /* Slightly enlarge */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
   }
