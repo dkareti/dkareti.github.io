@@ -35,3 +35,15 @@ navLinks.forEach(anchor => {
         }
     });
 });
+
+ // Show the button when user scrolls down 100px
+ window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+      ? "block" : "none";
+  };
+
+  // Scroll to the top when the button is clicked
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
