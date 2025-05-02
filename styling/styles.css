@@ -11,9 +11,13 @@
 /* General Styles */
 
 
-.link:hover {
+a.link {
+    text-decoration: none;
+}
+
+
+a.link:hover {
     transform: scale(1.05);      /* Slightly enlarge */
-    box-shadow: 0 4px 12px rgb(255, 255, 255); /* Add shadow */
 }
 
 body {
