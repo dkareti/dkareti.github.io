@@ -305,3 +305,49 @@ footer .container {
     transform: scale(1.05);      /* Slightly enlarge */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
   }
+
+  /* Container for dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown button */
+  .dropbtn {
+    background-color: #3498db;
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Hover to show the dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Hover effect for links */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
