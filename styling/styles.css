@@ -103,14 +103,14 @@ header .container {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.8em;
+    font-size: 2.2em; /* Slightly larger */
+    font-weight: 700;
+    letter-spacing: 1px; /* A little breathing room */
 }
 
 header p {
-    margin: 0;
-    font-size: 1em;
-    color: var(--light-blue);
+    font-size: 1.1em; /* Slightly larger */
+    opacity: 0.9; /* Make it a bit softer */
 }
 
 nav ul {
@@ -149,7 +149,7 @@ main {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 40px;
 }
 
 .project-card {
@@ -157,6 +157,7 @@ main {
     padding: 15px;
     border-radius: 5px;
     background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .project-card h3 {
@@ -193,6 +194,7 @@ main {
     color: var(--white);
     text-decoration: underline;
 
+    transform: scale(1.05);
     border-radius: 2px;
     border-width: 2px;
     border-color: var(--medium-blue);
