@@ -354,3 +354,11 @@ footer .container {
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
+
+  /* Image rules */
+.project-thumbnail{
+  width: 100%;             /* fills the tile width */
+  height: auto;            /* keep aspect ratio */
+  object-fit: cover;       /* crops gracefully if needed */
+  border-radius: 0.35rem;
+}
