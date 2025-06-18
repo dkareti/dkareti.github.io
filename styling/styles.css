@@ -7,6 +7,8 @@
     --soft-grey: #f4f4f4;
     --beige-off-white: #f5f5dc;
     
+   
+    
 }
 /* General Styles */
 
@@ -227,6 +229,12 @@ main {
 /* Contact Section */
 #contact {
     background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 16px;
+
+    margin: 4rem auto;
+    max-width: 700px;
 }
 
 .contact-info p {
@@ -361,4 +369,34 @@ footer .container {
   height: auto;            /* keep aspect ratio */
   object-fit: cover;       /* crops gracefully if needed */
   border-radius: 0.35rem;
+}
+
+/* For intro text */
+.intro-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.6;
+  color: transparent;
+  background: linear-gradient(90deg, #3b82f6, #14b8a6); /* blue to teal */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.highlight {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
