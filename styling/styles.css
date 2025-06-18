@@ -150,6 +150,7 @@ main {
     background: linear-gradient(135deg, #0074D9, #add8e6);
     font-size: 10rem;
     font-weight: 900;
+    color: var(--dark-text);
     justify-content: center;
     align-items: center;
 }
