@@ -144,8 +144,16 @@ main {
 }
 
 /* Projects Section */
+#fill {
+    background: linear-gradient(135deg, #0074D9, #add8e6);
+    font-size: 10rem;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+}
+
 #projects {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .project-grid {
