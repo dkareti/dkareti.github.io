@@ -40,7 +40,7 @@ a.hdr:visited {
 }
 
 a.hdr:hover {
-    color: var(--navy); /* Optional: light gray on hover for feedback */
+    color: var(--dark-text); /* Optional: light gray on hover for feedback */
 }
 
 a.hdr:active {
