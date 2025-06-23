@@ -95,7 +95,7 @@ a.hdr:active {
 
 /* Header */
 header {
-    background-color: var(--navy);
+    background: linear-gradient(rgb(86, 86, 234), yellowgreen);
     color: var(--white);
     padding: 1em 0;
 }
@@ -153,6 +153,7 @@ main {
     color: var(--dark-text);
     justify-content: center;
     align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #projects {
