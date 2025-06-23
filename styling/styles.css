@@ -36,7 +36,7 @@ a.hdr {
 }
 
 a.hdr:visited {
-    color: white;
+    color: lightslategray;
 }
 
 a.hdr:hover {
@@ -44,7 +44,7 @@ a.hdr:hover {
 }
 
 a.hdr:active {
-    color: white;
+    color: lightslategray;
 }
 
 .block-seperation {
@@ -151,7 +151,7 @@ main {
     background: linear-gradient(135deg, #0074D9, #add8e6);
     font-size: 10rem;
     font-weight: 900;
-    color: var(--dark-text);
+    color: transparent;
     justify-content: center;
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -269,7 +269,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--navy);
+    background: linear-gradient(yellowgreen,rgb(86, 86, 234));
     color: var(--white);
     text-align: center;
     padding: 1em 0;
@@ -393,7 +393,7 @@ footer .container {
   max-width: 600px;
   line-height: 1.6;
   color: transparent;
-  background: linear-gradient(90deg, #3b82f6, #14b8a6); /* blue to teal */
+  background: linear-gradient(90deg, black, lightslategray); /* blue to teal */
   -webkit-background-clip: text;
   background-clip: text;
   animation: fadeInUp 1s ease-out forwards;
@@ -401,6 +401,7 @@ footer .container {
   transform: translateY(20px);
   margin: 0 auto;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;  
 }
 
 .highlight {
