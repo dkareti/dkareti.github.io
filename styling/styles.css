@@ -36,7 +36,7 @@ a.hdr {
 }
 
 a.hdr:visited {
-    color: lightslategray;
+    color: var(--navy);
 }
 
 a.hdr:hover {
@@ -44,7 +44,7 @@ a.hdr:hover {
 }
 
 a.hdr:active {
-    color: lightslategray;
+    color: var(--navy);
 }
 
 .block-seperation {
@@ -275,12 +275,6 @@ footer {
     text-align: center;
     padding: 1em 0;
     position: relative; /* To contain the container */
-}
-
-footer .img{
-    width: 32px;
-    height: 32px; 
-    filter: invert(1);
 }
 
 footer .container {
