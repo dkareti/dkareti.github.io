@@ -149,14 +149,15 @@ main {
 
 /* Projects Section */
 .fill {
-    background: linear-gradient(135deg, #0074D9, #add8e6);
+    background: linear-gradient(135deg, #0074D9, #055b78);
     font-size: 10rem;
     font-weight: 900;
-    color: transparent;
+    color: lightslategray;
     justify-content: center;
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
