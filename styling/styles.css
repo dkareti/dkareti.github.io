@@ -31,7 +31,7 @@ body {
 }
 
 a.hdr {
-    color: black;
+    color: white;
     text-decoration: none; /* Optional: removes underline */
 }
 
@@ -40,11 +40,7 @@ a.hdr:visited {
 }
 
 a.hdr:hover {
-    color: var(--dark-text); /* Optional: light gray on hover for feedback */
-}
-
-a.hdr:active {
-    color: lightslategrey;
+    color: var(--medium-blue); /* Optional: light gray on hover for feedback */
 }
 
 .block-seperation {
@@ -97,7 +93,7 @@ a.hdr:active {
 
 /* Header */
 header {
-    background: linear-gradient(to right, blue, green, blue);
+    background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
     color: black;
     padding: 1em 0;
 }
@@ -271,7 +267,7 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, --dark-text, --light-blue, --dark-text);
+    background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
     color: var(--dark-text);
     text-align: center;
     padding: 1em 0;
