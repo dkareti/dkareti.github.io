@@ -336,6 +336,10 @@ footer .container {
     margin-left: 200px;
   }
 
+  .dropdown:hover{
+    transform: scale(1.1);
+  }
+
   /* Dropdown button */
   .dropbtn {
     background-color: var(--medium-blue);
