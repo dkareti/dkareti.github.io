@@ -97,6 +97,7 @@ header {
     background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
     color: lightslategrey;
     padding: 1em 0;
+    border-radius: 0.35rem;
 }
 
 header .container {
