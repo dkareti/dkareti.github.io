@@ -35,12 +35,13 @@ a.hdr {
     text-decoration: none; /* Optional: removes underline */
 }
 
-a.hdr:visited {
-    color: lightblue;
+a.hdr:active{
+    color: limegreen;
 }
 
 a.hdr:hover {
-    color: var(--medium-blue); /* Optional: light gray on hover for feedback */
+    color: var(black); /* Optional: light gray on hover for feedback */
+    cursor: pointer;
 }
 
 .block-seperation {
@@ -94,7 +95,7 @@ a.hdr:hover {
 /* Header */
 header {
     background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
-    color: black;
+    color: lightslategrey;
     padding: 1em 0;
 }
 
