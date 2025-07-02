@@ -185,6 +185,7 @@ main {
     list-style: none;
     padding: 0;
     margin-bottom: 1em;
+    flex-wrap: wrap;
     display: flex;
     gap: 0.5em;
 }
