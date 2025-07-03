@@ -40,7 +40,7 @@ a.hdr:active{
 }
 
 a.hdr:hover {
-    color: var(black); /* Optional: light gray on hover for feedback */
+    color: black; /* Optional: light gray on hover for feedback */
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ a.hdr:hover {
 /* Header */
 header {
     background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
-    color: lightslategrey;
+    color: white;
     padding: 1em 0;
     border-radius: 0.35rem;
 }
