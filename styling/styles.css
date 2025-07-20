@@ -18,8 +18,14 @@ a.link {
     text-decoration: underline;
 }
 
+body {
+  
+}
 
 body {
+    background-image: url('../assets/backgrounds/folk-pattern.png'); /* Your image file path */
+    background-repeat: repeat;           /* Repeat horizontally and vertically */
+    background-size: auto;               /* Default size */
     font-family: sans-serif;
     margin: 0;
     padding: 40px;
