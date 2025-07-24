@@ -1,3 +1,4 @@
+/* Declare colors to use within the w3bsite */
 :root {
     --navy: #001f3f;
     --white: #ffffff;
@@ -11,19 +12,29 @@
    
     
 }
-/* General Styles */
-
-
 a.link {
     text-decoration: underline;
 }
 
+a.hdr {
+    color: var(--beige-off-white);
+    text-decoration: none; /* Optional: removes underline */
+}
 
+a.hdr:active{
+    color: limegreen;
+}
+
+a.hdr:hover {
+    color: var(--medium-blue);
+    cursor: pointer;
+}
 
 body {
     background-image: url('../assets/backgrounds/folk-pattern.png'); /* Your image file path */
     background-repeat: repeat;           /* Repeat horizontally and vertically */
     background-size: auto;               /* Default size */
+
     font-family: sans-serif;
     margin: 0;
     padding: 40px;
@@ -34,19 +45,7 @@ body {
     line-height: 1.6;
 }
 
-a.hdr {
-    color: white;
-    text-decoration: none; /* Optional: removes underline */
-}
 
-a.hdr:active{
-    color: limegreen;
-}
-
-a.hdr:hover {
-    color: black; /* Optional: light gray on hover for feedback */
-    cursor: pointer;
-}
 
 .block-seperation {
     border: 1px solid var(--light-blue);
@@ -78,9 +77,12 @@ a.hdr:hover {
   }
 
 .container {
+    background-color: var(--navy);
+    border-radius: 35px;
+    
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
 }
 
 .section {
@@ -92,14 +94,14 @@ a.hdr:hover {
     padding-bottom: 0.5em;
     margin-bottom: 1.5em;
     font-size: 2em;
-    color: var(--navy);
+    color: var(--beige-off-white);
     text-decoration: underline;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
-    color: white;
+    background: transparent;
+    color: var(--beige-off-white);
     padding: 1em 0;
     border-radius: 0.35rem;
 }
@@ -248,17 +250,20 @@ main {
 
 /* Contact Section */
 #contact {
-    background-color: #fff;
+    background-color: transparent;
     padding: 4rem 2rem;
     text-align: center;
     border-radius: 16px;
 
     margin: 4rem auto;
     max-width: 700px;
+
+    color: var(--beige-off-white)
 }
 
 .contact-info p {
     margin-bottom: 0.8em;
+    color: var(--beige-off-white)
 }
 
 .contact-info a {
@@ -274,8 +279,8 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, var(--dark-text), var(--light-blue), var(--dark-text));
-    color: var(--dark-text);
+    
+    color: var(--beige-off-white);
     text-align: center;
     padding: 1em 0;
     position: relative; /* To contain the container */
@@ -345,12 +350,14 @@ footer .container {
 
   .dropdown:hover{
     transform: scale(1.1);
+    background-color: black;
+    color: var(--beige-off-white)
   }
 
   /* Dropdown button */
   .dropbtn {
-    background-color: var(--medium-blue);
-    color: var(--white);
+    background-color: var(--beige-off-white);
+    color: black;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -401,8 +408,7 @@ footer .container {
   font-weight: 600;
   max-width: 600px;
   line-height: 1.6;
-  color: transparent;
-  background: linear-gradient(90deg, black, lightslategray); /* blue to teal */
+  color: var(--beige-off-white);
   -webkit-background-clip: text;
   background-clip: text;
   animation: fadeInUp 1s ease-out forwards;
@@ -411,11 +417,14 @@ footer .container {
   margin: 0 auto;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;  
+
+  /* Include contrast to enable the text to be legible with the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .highlight {
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration:dotted;
 }
 
 /* Fade in animation */
