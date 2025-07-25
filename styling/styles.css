@@ -12,6 +12,13 @@
    
     
 }
+
+.about-grid {
+    
+    color: var(--beige-off-white);
+    gap: 40px;
+}
+
 a.link {
     text-decoration: underline;
 }
@@ -59,8 +66,8 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--medium-blue);
-    color: var(--beige-off-white);
+    background-color: var(--beige-off-white);
+    color: black;
     text-decoration: none;
     border-radius: 4px;
     border-color: #001f3f;
@@ -70,10 +77,11 @@ body {
   }
   
   .btn:hover {
-    background-color: var(--beige-off-white);   /* Darker blue on hover */
-    color: var(--medium-blue);
+    background-color: black;
+    color: var(--beige-off-white);
     transform: scale(1.05);      /* Slightly enlarge */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+    text-decoration: underline;
   }
 
 .container {

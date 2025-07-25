@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <section class="section">
+        <section class="intro-text">
 
             <p style="padding: 40px; color: black">
                 For each project mentioned here, I included a demo and a github link. Feel free to reach out with any questions/comments!
@@ -189,6 +189,41 @@
                 <div class="project-links">
                     <a href="../demos/FinancialGPT.mov" target="_blank">Live Demo</a>
                     <a href="https://github.com/dkareti/finLitGPT" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>DriverBehavior Predictor</h3>
+                 <img src="../assets/images/thumbnailDLDrivingPredictor.png" 
+                alt="The Evaluation Merics of the Model!"
+                class="project-thumbnail"
+                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
+                > 
+                <p>
+                    This predictor was developed using a deep learning pipeline to classify driver behaviors—such 
+                    as acceleration, braking, turning, and cruising—based on time-series vehicle telemetry data. 
+                    Simulated and preprocessed sensor data sequences (speed, acceleration, steering, yaw rate, throttle, 
+                    and brake) to mimic real-world driving scenarios. Designed and compared multiple neural network 
+                    architectures including CNNs, LSTMs, and hybrid CNN-LSTM models to determine the most effective 
+                    approach for temporal pattern recognition.
+
+                    The final system achieved 100% accuracy on a balanced test set, and included experiments with batch 
+                    size, model depth, and loss functions to optimize performance. This project highlights a strong 
+                    understanding of time-series modeling, model evaluation (precision, recall, F1), and the importance of 
+                    reproducibility in training pipelines.
+                </p>
+                
+                <ul class="project-tech">
+                    <li>TensorFlow / Keras</li>
+                    <li>Python </li>
+                    <li>CNNs, LSTMs, RNNs</li>
+                    <li>Regularizers</li>
+                    <li>Model Saving (.keras)</li>
+                    <li>Scikit Learn</li>                    
+                </ul>
+                <div class="project-links">
+                    <a href="../demos/drivingPredictor.mov" target="_blank">Live Demo</a>
+                    <a href="https://github.com/dkareti/deep_learning_driving_predictor" target="_blank">GitHub</a>
                 </div>
             </div>
     </main>
