@@ -218,6 +218,7 @@ main {
     display: inline-block;
     margin-right: 1em;
     color: var(--medium-blue);
+    padding: 10px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
