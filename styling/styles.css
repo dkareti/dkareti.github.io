@@ -34,16 +34,19 @@
 
 html { scroll-behavior: smooth; }
 
+/* Body uses flex-column so footer always sits flush at the bottom.
+   Background is solid navy — no tiling pattern bleeding through. */
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background-color: var(--off-white);
-  background-image: url('../assets/backgrounds/folk-pattern.png');
-  background-repeat: repeat;
-  background-size: auto;
+  background-color: var(--navy);
   color: #1c2b3a;
   line-height: 1.65;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main { flex: 1; }
 
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -236,15 +239,6 @@ nav a.active {
   transform: translateY(-1px);
 }
 
-.btn-ghost {
-  background: transparent;
-  color: var(--accent);
-  border-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-}
-.btn-ghost:hover { color: var(--accent-soft); }
-
 /* --- Section base ------------------------------------------ */
 .section {
   padding: 64px 0;
@@ -284,9 +278,9 @@ nav a.active {
   transform: translateY(-3px);
 }
 
-/* --- Contact section (home) -------------------------------- */
+/* --- Contact section --------------------------------------- */
 .contact-section {
-  background: var(--navy);
+  background: var(--navy-light);
   padding: 64px 24px;
 }
 
@@ -303,44 +297,54 @@ nav a.active {
   font-size: 1rem;
 }
 
+/* Three stacked rows, each a single flex card */
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
 }
 
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
+  gap: 16px;
+  padding: 16px 20px;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: var(--radius-md);
   transition: background var(--transition);
+  text-decoration: none;
+  /* prevent the outer <a> from being overridden by inner <a> color */
+  color: inherit;
 }
-.contact-card:hover { background: rgba(255,255,255,0.11); }
+.contact-card:hover { background: rgba(255,255,255,0.12); }
 
 .contact-card-icon {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
   filter: invert(1);
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .contact-card-text strong {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 2px;
 }
+/* The inner <a> inherits light color and has no underline */
 .contact-card-text a {
   color: var(--text-light);
   font-size: 0.95rem;
+  text-decoration: none;
   transition: color var(--transition);
 }
 .contact-card-text a:hover { color: var(--white); }
@@ -388,7 +392,11 @@ nav a.active {
   max-width: 520px;
 }
 
-.about-sections { padding: 64px 24px; }
+/* About content sections — white background so text is readable */
+.about-sections {
+  background: var(--white);
+  padding: 64px 24px;
+}
 .about-sections-inner { max-width: 980px; margin: 0 auto; }
 
 .about-block {
@@ -421,7 +429,6 @@ nav a.active {
   color: #3a4a5a;
   line-height: 1.75;
 }
-
 .about-block-body + .about-block-body { margin-top: 12px; }
 
 .edu-item { margin-bottom: 20px; }
@@ -458,7 +465,11 @@ nav a.active {
 .projects-hero .section-title { color: var(--white); margin-bottom: 10px; }
 .projects-hero-sub { color: var(--text-light); font-size: 1rem; }
 
-.projects-body { padding: 56px 24px; }
+/* White background so cards are readable */
+.projects-body {
+  background: var(--off-white);
+  padding: 56px 24px;
+}
 .projects-body-inner { max-width: 980px; margin: 0 auto; }
 
 .projects-grid {
@@ -567,7 +578,6 @@ nav a.active {
 }
 .project-link:hover { color: var(--navy); }
 
-/* add-project hint */
 .add-project-hint {
   border: 2px dashed var(--card-border);
   border-radius: var(--radius-md);
@@ -595,8 +605,18 @@ nav a.active {
 .skills-hero .section-title { color: var(--white); margin-bottom: 10px; }
 .skills-hero-sub { color: var(--text-light); font-size: 1rem; }
 
-.skills-body { padding: 56px 24px; }
-.skills-body-inner { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
+/* White background so skill content is readable */
+.skills-body {
+  background: var(--white);
+  padding: 56px 24px;
+}
+.skills-body-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 
 .skills-group-title {
   font-size: 1.1rem;
@@ -637,6 +657,8 @@ footer {
   background: var(--navy);
   border-top: 1px solid rgba(255,255,255,0.07);
   padding: 28px 24px;
+  /* flex-shrink:0 ensures footer never collapses in the flex column */
+  flex-shrink: 0;
 }
 
 .footer-inner {
