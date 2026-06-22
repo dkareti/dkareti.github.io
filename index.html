@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Kareti - Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="styling/styles.css">
-    <script src="scripts/scrolling.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Kareti — Software Engineer</title>
+  <link rel="stylesheet" href="styling/styles.css">
 </head>
 <body>
-     
-    <header>
-        <div class="container">
-            <h1><a href="index.html" class="hdr">Daniel Kareti</a></h1>
-            <p>Software Engineer</p>
 
-            <div class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="/sub-pages/about_landing_page.html">About Me</a>
-                    <a href="/sub-pages/skills_landing_page.html">My Skills</a>
-                    <a href="/sub-pages/projects_landing_page.html">My Projects</a>
-                </div>
-            </div>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="index.html">Daniel Kareti</a>
+        <span>Software Engineer</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="sub-pages/about.html">About</a></li>
+          <li><a href="sub-pages/projects.html">Projects</a></li>
+          <li><a href="sub-pages/skills.html">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <img src="IMG_1253.jpeg" alt="Daniel Kareti" class="hero-photo">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Portfolio</p>
+          <h1 class="hero-name">Hi, I'm Daniel Kareti</h1>
+          <p class="hero-tagline">
+            A passionate software engineer with a focus on machine learning, 
+            NLP, and full-stack development. I love turning ideas into clean, 
+            impactful software.
+          </p>
+          <div class="hero-actions">
+            <a href="sub-pages/projects.html" class="btn btn-primary">View My Work</a>
+            <a href="sub-pages/about.html" class="btn btn-outline">About Me</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        
-    </header>
-
-
-    <main>
-        
-        <section class="section">
-            <div class="container">
-                <p class="intro-text">
-                    Hi! I'm <span class="highlight">Daniel Kareti</span> 
-                </p>
-                <div style="text-align: center;">
-                    <img src="IMG_1253.jpeg" style="max-width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 0.35rem;">
-                </div>  
-                <p class="intro-text">
-                    I am a passionate software engineer who loves turning ideas into clean, impactful code.
-                    Explore my portfolio and see what I've been building!
-                </p>
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">
+          I'm always open to new opportunities — feel free to reach out via any of the links below.
+        </p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:danielkareti@gmail.com">
+            <img class="contact-card-icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+            <div class="contact-card-text">
+              <strong>Email</strong>
+              <a href="mailto:danielkareti@gmail.com">danielkareti@gmail.com</a>
             </div>
-        </section>            
-        
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact Information</h2>
-                <p>
-                    I'm always open to new opportunities. Feel free to reach out!
-                </p>
-                <p>
-                    My LinkedIn, email, and GitHub are linked below, and in 
-                    the footer of every page!
-                </p>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:danielkareti@gmail.com">danielkareti@gmail.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/">linkedin.com/in/daniel-kareti-494a93219</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/dkareti" target="_blank">github.com/dkareti</a></p>
-                    </div>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank">
+            <img class="contact-card-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            <div class="contact-card-text">
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank">daniel-kareti-494a93219</a>
             </div>
-        </section>
-
-        
-    </main>
-
-    
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Daniel Kareti. All rights reserved.</p> 
-            <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-                     alt="LinkedIn" 
-                     style="width: 32px; height: 32px; fill: white;">
-            </a>
-            <a href="mailto:danielkareti@gmail.com" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
-                     alt="Email" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
-            <a href="https://github.com/dkareti" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
-                     alt="GitHub" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
+          </a>
+          <a class="contact-card" href="https://github.com/dkareti" target="_blank">
+            <img class="contact-card-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            <div class="contact-card-text">
+              <strong>GitHub</strong>
+              <a href="https://github.com/dkareti" target="_blank">github.com/dkareti</a>
+            </div>
+          </a>
         </div>
-    </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Daniel Kareti. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" aria-label="LinkedIn">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:danielkareti@gmail.com" aria-label="Email">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        </a>
+        <a href="https://github.com/dkareti" target="_blank" aria-label="GitHub">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" onclick="scrollToTop()" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

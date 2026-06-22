@@ -1,165 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Daniel Kareti</title>
-    <link rel="stylesheet" href="../styling/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Daniel Kareti</title>
+  <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1><a href="../index.html" class="hdr">Daniel Kareti</a></h1>
-            <p>Software Engineer</p>
-            <nav>
-                <!-- The term 'ul' indicates an unordered list -->
-                <ul>
-                    <li><a href="about_landing_page.html">About</a></li>
-                    <li><a href="projects_landing_page.html">Projects</a></li>
-                    <li><a href="skills_landing_page.html">Skills</a></li>
-                    
-                </ul>
-            </nav>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="../index.html">Daniel Kareti</a>
+        <span>Software Engineer</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== SKILLS HERO ===== -->
+    <section class="skills-hero">
+      <div class="skills-hero-inner">
+        <p class="section-label">What I Work With</p>
+        <h1 class="section-title" style="color: white;">Skills</h1>
+        <p class="skills-hero-sub">
+          Programming languages, frameworks, and tools I've used across academic research, personal projects, and industry work.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS CONTENT ===== -->
+    <section class="skills-body">
+      <div class="skills-body-inner">
+
+        <!-- Languages -->
+        <div>
+          <h2 class="skills-group-title">Backend Languages</h2>
+          <ul class="skills-tags">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Swift</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+          <p class="skills-note">
+            I started with Java, C, and C++ to learn data structures fundamentals, and have spent the last few 
+            years building machine learning models and web apps in Python. I use SQL regularly across 
+            PostgreSQL, MongoDB, MySQL, and SQLite.
+          </p>
         </div>
-    </header>
 
-    <main>
-        <div class="container">
-
-            <p>This page was designed to house all of my skills, programming and non-programming.</p>
-            
-            
-
-            <p>In terms of non-programming skills, I have broken down my skills into the following categories. </p>
-
-            <section class="block-seperation">
-                <h3>Project Management</h3>
-                <p>
-                    To manage my software development (for my personal projects), I use Jira. 
-                    As I  started to create more complex projects, this tool allowed me to 
-                    keep track of the progression of each subtask. 
-                </p>
-
-                <p>
-                    I follow the Agile framework in every project I create, allowing me to ensure that the design is 
-                    continuously improved upon. 
-                </p>
-            </section>
-
-            
-
-            
-            <h2 id="programming-skills" class="section-title">Languages</h2>
-        
-            <h3>BackEnd Programming Languages</h3>
-            <ul class="skills-list">
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>C++</li>
-                <li>C</li>
-                <li>Swift</li>
-                <li>JavaScript</li>
-            </ul>
-
-            <section class="block-seperation">
-                <p>
-                    I used Java, C, and C++ in the beginning of my software engineering education to learn the 
-                    fundamentals of data structures. Within the last few years, I have started exploring machine learning
-                    techniques and web-apps using Python.  
-                </p> 
-
-                <p>
-                    Within my reseach experience and my senior capstone project, I leveraged database concepts.
-                    Particularly, I worked with PostgresSQL, mongoDB, and mySQL. Within my current projects, 
-                    I work with SQLite.
-                </p>
-            </section>
-        
-            <h3>FrontEnd Programming Languages</h3>
-            <ul class="skills-list">
-                <li>CSS</li>
-                <li>HTML</li>
-            </ul>
-
-            <section class="block-seperation">
-                <p>
-                    I use HTML and CSS for anything web related, whether it is coding this website or creating static webpages.
-                </p>
-            </section>
-
-
-            
-            <h2 class="section-title">Frameworks</h2>
-            <ul class="skills-list">
-                <li>Flask</li>
-                <li>Sci-kit Learn</li>
-                <li>DialogFlow</li>
-                <li>NLTK</li>
-                <li>ngrok</li>
-                <li>Render</li>
-            </ul>
-            
-            <section class="block-seperation">
-                <p>
-                    Flask is a Python framework I use to create web-apps. I first expericed the power of Flask
-                    when I implemented to google oauth for a AI chatbot I created in college.
-                    
-                </p>
-            </section>
-
-
-            <h2 class="section-title">Debugging Tools</h2>
-            <h3>C/C++ Specific</h3>
-            <ul class="skills-list">
-                <li>GDB</li>
-                <li>Valgrind</li>
-            </ul>
-
-            <section class="block-seperation">
-                <p>
-                    These tools are particularly useful when debugging C and C++ code because it pinpoints exactly where
-                    'segmentation faults' are being caused. During college, my profeciency in both of these tools reduced 
-                    my time to debug significantly.
-                </p>
-
-            </section>
-
-
-            <h2 class="section-title">Version Control</h2>
-            <ul class="skills-list">
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
-
-           
-            <a href="../index.html" class="btn">← Back to Home</a>
+        <!-- Frontend -->
+        <div>
+          <h2 class="skills-group-title">Frontend</h2>
+          <ul class="skills-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <p class="skills-note">
+            I use HTML and CSS for anything web-related — from this portfolio to static and dynamic 
+            Flask-rendered pages.
+          </p>
         </div>
-    </main>
 
-    <a href = "#" onclick="scrollToTop(); return false;" id="backToTopBtn" title="Go to top">↑ Back to Top</a>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Daniel Kareti. All rights reserved.</p> 
-            <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-                     alt="LinkedIn" 
-                     style="width: 32px; height: 32px; fill: white;">
-            </a>
-            <a href="mailto:danielkareti@gmail.com" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
-                     alt="Email" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
-            <a href="https://github.com/dkareti" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
-                     alt="GitHub" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
+        <!-- Frameworks & Libraries -->
+        <div>
+          <h2 class="skills-group-title">Frameworks &amp; Libraries</h2>
+          <ul class="skills-tags">
+            <li>Flask</li>
+            <li>TensorFlow / Keras</li>
+            <li>PyTorch</li>
+            <li>Hugging Face Transformers</li>
+            <li>Scikit-learn</li>
+            <li>NLTK</li>
+            <li>SentenceTransformers</li>
+            <li>Dialogflow</li>
+            <li>Jinja2</li>
+          </ul>
+          <p class="skills-note">
+            Flask is my go-to for Python web apps — I first used it to integrate Google OAuth into an AI 
+            chatbot during college, and have since built multiple full-stack projects on top of it.
+          </p>
         </div>
-    </footer>
 
+        <!-- Databases -->
+        <div>
+          <h2 class="skills-group-title">Databases</h2>
+          <ul class="skills-tags">
+            <li>SQLite</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <p class="skills-note">
+            Used in both research and senior capstone contexts, as well as personal projects. Comfortable 
+            with schema design, queries, and integrating databases into Flask backends.
+          </p>
+        </div>
+
+        <!-- Tools -->
+        <div>
+          <h2 class="skills-group-title">Tools &amp; Platforms</h2>
+          <ul class="skills-tags">
+            <li>Git / GitHub</li>
+            <li>Jira</li>
+            <li>Render</li>
+            <li>ngrok</li>
+            <li>GDB</li>
+            <li>Valgrind</li>
+            <li>Xcode</li>
+          </ul>
+          <p class="skills-note">
+            I follow Agile practices across all my personal projects using Jira for task tracking. 
+            GDB and Valgrind were key tools during my C/C++ work for catching segfaults and memory leaks.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Daniel Kareti. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" aria-label="LinkedIn">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:danielkareti@gmail.com" aria-label="Email">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        </a>
+        <a href="https://github.com/dkareti" target="_blank" aria-label="GitHub">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" onclick="scrollToTop()" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="../scripts/main.js"></script>
 </body>
 </html>

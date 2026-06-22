@@ -1,286 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Daniel Kareti</title>
-    <link rel="stylesheet" href="../styling/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Daniel Kareti</title>
+  <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1><a href="../index.html" class="hdr">Daniel Kareti</a></h1>
-            <p>Software Engineer</p>
-            <nav>
-                <!-- The term 'ul' indicates an unordered list -->
-                <ul>
-                    <li><a href="about_landing_page.html">About</a></li>
-                    <li><a href="projects_landing_page.html">Projects</a></li>
-                    <li><a href="skills_landing_page.html">Skills</a></li>
-                    
-                </ul>
-            </nav>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="../index.html">Daniel Kareti</a>
+        <span>Software Engineer</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PROJECTS HERO ===== -->
+    <section class="projects-hero">
+      <div class="projects-hero-inner">
+        <p class="section-label">My Work</p>
+        <h1 class="section-title" style="color: white;">Projects</h1>
+        <p class="projects-hero-sub">
+          A collection of things I've built — from AI-powered web apps to embedded systems and iOS tools.
+          Each includes a demo and GitHub link.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS GRID ===== -->
+    <section class="projects-body">
+      <div class="projects-body-inner">
+        <div class="projects-grid" id="projects-grid">
+          <!-- Cards are injected by JavaScript below -->
         </div>
-    </header>
 
-    <main>
-        <section class="intro-text">
-
-            <p style="padding: 40px; color: black">
-                For each project mentioned here, I included a demo and a github link. Feel free to reach out with any questions/comments!
-            </p>
-        </section>
-
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Financial Chatbot</h3>
-                <img src="../assets/images/FinancialGPT.png" 
-                alt="The Financial GPT in action!"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                >
-                <p>FinLitGPT is an AI-powered web application designed to provide clear, accessible answers to personal finance questions (e.g., IRAs, credit scores, investing). 
-                    It uses a Retrieval-Augmented Generation (RAG) pipeline combining a local knowledge base with OpenAI’s GPT model to generate accurate, context-aware responses. 
-                    The app features a clean, intuitive frontend tailored for non-technical users.
-                </p>
-                
-                <ul class="project-tech">
-                    <li>Flask</li>
-                    <li>JavaScript </li>
-                    <li>OpenAI API</li>
-                    <li>REST API</li>
-                    <li>SentenceTransformers</li>
-                    <li>Web Scraping</li>
-                    <li>Jinja2 + HTML/CSS</li>
-                    
-                    </ul>
-                <div class="project-links">
-                    <a href="https://youtu.be/IYf8HLykLwY" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/finLitGPT" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            
-
-            <div class="project-card">
-                <h3>DriverBehavior Predictor</h3>
-                 <img src="../assets/images/thumbnailDLDrivingPredictor.png" 
-                alt="The Evaluation Merics of the Model!"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                > 
-                <p>
-                    This predictor was developed using a deep learning pipeline to classify driver behaviors—such 
-                    as acceleration, braking, turning, and cruising—based on time-series vehicle telemetry data. 
-                    Simulated and preprocessed sensor data sequences (speed, acceleration, steering, yaw rate, throttle, 
-                    and brake) to mimic real-world driving scenarios. Designed and compared multiple neural network 
-                    architectures including CNNs, LSTMs, and hybrid CNN-LSTM models to determine the most effective 
-                    approach for temporal pattern recognition.
-
-                    The final system achieved 100% accuracy on a balanced test set, and included experiments with batch 
-                    size, model depth, and loss functions to optimize performance. This project highlights a strong 
-                    understanding of time-series modeling, model evaluation (precision, recall, F1), and the importance of 
-                    reproducibility in training pipelines.
-                </p>
-                
-                <ul class="project-tech">
-                    <li>TensorFlow / Keras</li>
-                    <li>Python </li>
-                    <li>CNNs, LSTMs, RNNs</li>
-                    <li>Regularizers</li>
-                    <li>Model Saving (.keras)</li>
-                    <li>Scikit Learn</li>                    
-                </ul>
-                <div class="project-links">
-                    <a href="https://youtu.be/iijE0y7GeXo" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/deep_learning_driving_predictor" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Devotional Web App</h3>
-                <img src="../assets/images/bible-devo-webpage.png" 
-                alt="The devo app in action!"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                >
-                <p> 
-                    This webpage is designed to provide users a central place to follow reading the Bible in a year. The users can choose any 
-                    day of the year, and they will get corresponding reading passages. There are two buttons below the passage, each copies 
-                    a tailored prompt to the clipboard and provides clarification or creates a devotional.  
-                </p>
-                
-                <ul class="project-tech">
-                    <li>Flask</li>
-                    <li>JavaScript </li>
-                    <li>PDF parsing/Regex</li>
-                    <li>REST API</li>
-                    <li>Prompt Engineering</li>
-                    <li>Jinja2 + HTML/CSS</li>
-                    
-                    </ul>
-                <div class="project-links">
-                    <a href="https://youtu.be/DOFEm896hTs" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/bible-in-a-year-reading" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Flask User Verification</h3>
-                <p>This project prompts the user their name and birthday. If a valid birthday is given, then  
-                    the user recieves a personalized welcome, and is placed in an age group! This age group
-                    is determined using an ML model. To reduce redundancy, the training of the model is stored.
-                    If the birthday is not valid, then the user is prompted to try again. With a succesfull 
-                    operation of the interface, the user can replay as many times as they want.
-                    From this project I learned how to create a web-app using Flask, how to embed machine learning
-                    in the web-app, and how to structure co-dependencies within a project.
-                </p>
-                <ul class="project-tech">
-                    
-                    <li>Jinja2 + HTML</li>
-                    <li>Flask (i.e., Python)</li>
-                    <li>joblib</li>
-                    <li>sci-kit learn</li>
-                    </ul>
-                <div class="project-links">
-                    <a href="../demos/Project Demo-FlaskAPP.mov" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/flask-age-checker" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>iPhone Photo selector app</h3>
-                <p>
-
-                    The problem this app addressess is identifying photos for events that occur once a year. Each time the app is run, you can
-                    select a date via apple's date picker API. Using this date, the app searches through your photo library to identify all the 
-                    photos from that day.
-                </p>
-                <p>
-                    The future goal is to identify the photos and then place them into an album to easily organize one's photo library on their
-                    iPhone.
-                </p>
-                <ul class="project-tech">
-                    <li>Swift</li>
-                    <li>Xcode</li>
-                    <li>iOS Simulator</li>
-                    </ul>
-                <div class="project-links">
-                    <a href="../demos/iphone_photo_selector_demo.mov" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/photoSearch_app" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <h3>Mental Health Check-in Conversational Assistant</h3>
-                <img src="../assets/images/database-storage_mental_health_assistant.png" 
-                alt="Database Functionality of the Conversational Assistant"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                >
-                <p>This project is a sentiment-aware conversational assistant built using Dialogflow 
-                    and Flask. Specifically, DialogFlow was used for natural language understanding 
-                    and a Flask-based webhook was used for backend processing. The data associated with 
-                    each user interaction is stored in a database for later analysis.
-                    On request, it summarizes the past week’s mood trends and provides empathetic, 
-                    context-aware feedback. During development, I used ngrok to securely expose my local 
-                    Flask server to the internet, enabling real-time interaction and testing with Dialogflow’s 
-                    cloud-based interface. This project allowed me to gain hands-on experience integrating 
-                    conversational AI with NLP, managing intent-entity flows, building sentiment-driven 
-                    logic, and handling backend data storage and analytics.
-                </p>
-                
-                <ul class="project-tech">
-                    <li>DialogFlow</li>
-                    <li>Flask</li>
-                    <li>ngrok</li>
-                    <li>NLTK</li>
-                    <li>SQLite</li>
-                    </ul>
-                <div class="project-links">
-                    <a href="https://youtu.be/_Kf-zIH0WRU" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/mental-health-checkin-assistant" target="_blank">GitHub</a>
-                </div>
-            </div>
-            
-            
-            <div class="project-card">
-                <h3>LLM-powered Career Tagline Generator</h3>
-                <img src="../assets/images/tagline_gen_photo.png" 
-                alt="Tagline Interface"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                >
-                <p>A streamlined AI tool that generates one-sentence, third-person LinkedIn taglines tailored to users’ professional profiles. 
-                    This project uses a fine-tuned version of FLAN-T5 (flan-t5-base) to craft concise, 
-                    grammatically correct branding statements based on user-provided inputs such as job title, skills, degree, and academic field. 
-                    It is designed to assist job seekers and professionals in quickly generating polished taglines for LinkedIn or resumes.
-                </p>
-                
-                <ul class="project-tech">
-                    <li>Flask</li>
-                    <li>Hugging Face Transformers </li>
-                    <li>PyTorch</li>
-                    <li>Jinja2 + HTML/CSS</li>
-                    
-                    </ul>
-                <div class="project-links">
-                    <a href="../demos/tagline_gen_demo.mov" target="_blank">Live Demo</a>
-                    <a href="https://github.com/dkareti/llm_resume_insights" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Deployed Genre Story Starter</h3>
-                <img src="../assets/images/image_story_gen.png" 
-                alt="Story Generator"
-                class="project-thumbnail"
-                style="max-width: 50%; height: auto; display: block; margin: 0 auto;"
-                >
-                <p>This is a dynamic Flask web app that generates creative sentence starters based on user-selected genres like Adventure, Sci-Fi, and Fantasy. 
-                    It features a responsive UI with a gradient background as well as interactive functionality like copy-to-clipboard and genre-driven sentence assembly using Python logic. 
-                    The app is fully deployed on Render and designed to demonstrate full-stack development with Flask, HTML/CSS, and client-side JavaScript, showcasing both aesthetic polish and functional interactivity.
-                </p>
-                
-                <ul class="project-tech">
-                    <li>Flask</li>
-                    <li>Render </li>
-                    <li>Jinja2 + HTML/CSS</li>
-                    
-                    </ul>
-                <div class="project-links">
-                    <a href="../demos/tagline_gen_demo.mov" target="_blank">Live Demo</a>
-                    <a href="https://text-story-generator.onrender.com/" target="_blank">Live Website</a>
-                    <a href="https://github.com/dkareti/text-story-generator" target="_blank">GitHub</a>
-                </div>
-            </div>
-           
-            
-
-            
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Daniel Kareti. All rights reserved.</p> 
-            <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-                     alt="LinkedIn" 
-                     style="width: 32px; height: 32px; fill: white;">
-            </a>
-            <a href="mailto:danielkareti@gmail.com" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
-                     alt="Email" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
-            <a href="https://github.com/dkareti" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
-                     alt="GitHub" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
+        <!-- How to add a project -->
+        <div class="add-project-hint" style="margin-top: 32px;">
+          <strong>Adding a new project?</strong><br>
+          Open <code>projects.html</code>, find the <code>const projects = [...]</code> array near the bottom, 
+          and add a new object following the same pattern. The card will appear automatically.
         </div>
-    </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Daniel Kareti. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" aria-label="LinkedIn">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:danielkareti@gmail.com" aria-label="Email">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        </a>
+        <a href="https://github.com/dkareti" target="_blank" aria-label="GitHub">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" onclick="scrollToTop()" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="../scripts/main.js"></script>
+
+  <script>
+    // ============================================================
+    // PROJECT DATA
+    // To add a new project, copy one of the objects below and fill
+    // in your details. All fields except `image` are required.
+    // Set image to "" if you don't have a thumbnail yet.
+    // ============================================================
+    const projects = [
+      {
+        title: "Financial Chatbot (FinLitGPT)",
+        description: "An AI-powered web app that answers personal finance questions (IRAs, credit scores, investing) using a Retrieval-Augmented Generation pipeline combining a local knowledge base with OpenAI's GPT. Built for non-technical users with a clean, intuitive frontend.",
+        tech: ["Flask", "OpenAI API", "RAG", "SentenceTransformers", "Web Scraping", "JavaScript", "Jinja2"],
+        image: "../assets/images/FinancialGPT.png",
+        demo: "https://youtu.be/IYf8HLykLwY",
+        github: "https://github.com/dkareti/finLitGPT",
+        live: ""
+      },
+      {
+        title: "Driver Behavior Predictor",
+        description: "A deep learning pipeline that classifies driver behaviors — acceleration, braking, turning, cruising — from time-series vehicle telemetry. Compared CNN, LSTM, and hybrid CNN-LSTM architectures; the final model achieved 100% accuracy on a balanced test set.",
+        tech: ["TensorFlow / Keras", "Python", "CNNs", "LSTMs", "Scikit-learn"],
+        image: "../assets/images/thumbnailDLDrivingPredictor.png",
+        demo: "https://youtu.be/iijE0y7GeXo",
+        github: "https://github.com/dkareti/deep_learning_driving_predictor",
+        live: ""
+      },
+      {
+        title: "Devotional Web App",
+        description: "A webpage that provides a Bible-in-a-year reading plan. Users pick any day of the year and get the corresponding passages, plus two buttons that copy tailored AI prompts to the clipboard for clarification or devotional generation.",
+        tech: ["Flask", "JavaScript", "PDF Parsing", "Regex", "Prompt Engineering", "Jinja2"],
+        image: "../assets/images/bible-devo-webpage.png",
+        demo: "https://youtu.be/DOFEm896hTs",
+        github: "https://github.com/dkareti/bible-in-a-year-reading",
+        live: ""
+      },
+      {
+        title: "Mental Health Check-in Assistant",
+        description: "A sentiment-aware conversational assistant built with Dialogflow and Flask. Tracks mood over time in a SQLite database, summarizes weekly trends, and provides empathetic context-aware feedback. Tested with live webhooks via ngrok.",
+        tech: ["Dialogflow", "Flask", "NLTK", "SQLite", "ngrok"],
+        image: "../assets/images/database-storage_mental_health_assistant.png",
+        demo: "https://youtu.be/_Kf-zIH0WRU",
+        github: "https://github.com/dkareti/mental-health-checkin-assistant",
+        live: ""
+      },
+      {
+        title: "LLM-Powered Career Tagline Generator",
+        description: "An AI tool that generates one-sentence, third-person LinkedIn taglines from a user's job title, skills, and degree. Fine-tuned FLAN-T5 (flan-t5-base) to produce concise, grammatically correct branding statements.",
+        tech: ["Flask", "Hugging Face Transformers", "PyTorch", "Jinja2"],
+        image: "../assets/images/tagline_gen_photo.png",
+        demo: "../demos/tagline_gen_demo.mov",
+        github: "https://github.com/dkareti/llm_resume_insights",
+        live: ""
+      },
+      {
+        title: "Flask User Verification",
+        description: "A web app that validates user name and birthday, places the user into an age group using an embedded ML classifier, and supports replaying the flow. An introduction to combining Flask with machine learning and managing serialized models with joblib.",
+        tech: ["Flask", "Scikit-learn", "joblib", "Jinja2"],
+        image: "",
+        demo: "../demos/Project Demo-FlaskAPP.mov",
+        github: "https://github.com/dkareti/flask-age-checker",
+        live: ""
+      },
+      {
+        title: "iPhone Photo Selector",
+        description: "An iOS app that lets users pick any date via Apple's date picker API and surfaces all photos taken on that day from their photo library — a foundation for an automatic album-creation tool.",
+        tech: ["Swift", "Xcode", "iOS Simulator"],
+        image: "",
+        demo: "../demos/iphone_photo_selector_demo.mov",
+        github: "https://github.com/dkareti/photoSearch_app",
+        live: ""
+      },
+      {
+        title: "Genre Story Starter",
+        description: "A dynamic Flask app that generates creative sentence starters based on user-selected genres (Adventure, Sci-Fi, Fantasy). Features copy-to-clipboard, a responsive gradient UI, and is fully deployed on Render.",
+        tech: ["Flask", "Render", "JavaScript", "Jinja2"],
+        image: "../assets/images/image_story_gen.png",
+        demo: "",
+        github: "https://github.com/dkareti/text-story-generator",
+        live: "https://text-story-generator.onrender.com/"
+      }
+    ];
+
+    // ============================================================
+    // CARD RENDERER — no need to edit below this line
+    // ============================================================
+    function renderProjects() {
+      const grid = document.getElementById('projects-grid');
+      grid.innerHTML = projects.map(p => {
+        const thumbnail = p.image
+          ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
+          : `<div class="project-no-image">{ }</div>`;
+
+        const techTags = p.tech.map(t => `<li>${t}</li>`).join('');
+
+        const links = [
+          p.demo  ? `<a class="project-link" href="${p.demo}"  target="_blank">▶ Demo</a>`   : '',
+          p.live  ? `<a class="project-link" href="${p.live}"  target="_blank">🌐 Live</a>`  : '',
+          p.github? `<a class="project-link" href="${p.github}" target="_blank">⌥ GitHub</a>` : ''
+        ].filter(Boolean).join('');
+
+        return `
+          <article class="project-card">
+            <div class="project-thumbnail-wrap">${thumbnail}</div>
+            <div class="project-body">
+              <h2 class="project-title">${p.title}</h2>
+              <p class="project-desc">${p.description}</p>
+              <ul class="project-tech">${techTags}</ul>
+              <div class="project-links">${links}</div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    renderProjects();
+  </script>
 </body>
 </html>

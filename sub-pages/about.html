@@ -1,103 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Daniel Kareti</title>
-    <link rel="stylesheet" href="../styling/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Daniel Kareti</title>
+  <link rel="stylesheet" href="../styling/styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1><a href="../index.html" class="hdr">Daniel Kareti</a></h1>
-            <p>Software Engineer</p>
-            <nav>
-                <!-- The term 'ul' indicates an unordered list -->
-                <ul>
-                    <li><a href="about_landing_page.html">About</a></li>
-                    <li><a href="projects_landing_page.html">Projects</a></li>
-                    <li><a href="skills_landing_page.html">Skills</a></li>
-                    
-                </ul>
-            </nav>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="../index.html">Daniel Kareti</a>
+        <span>Software Engineer</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== ABOUT HERO ===== -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <img src="../GradPhotoMission.jpg" alt="Daniel Kareti" class="about-photo">
+        <div>
+          <p class="about-intro-label">About Me</p>
+          <h1 class="about-intro-headline">Building software that<br>makes a real difference</h1>
+          <p class="about-intro-body">
+            I'm a software engineer with a strong foundation in embedded systems, machine learning, 
+            and full-stack development. I enjoy working across the entire stack — from hardware interfaces 
+            and databases all the way to conversational AI frontends.
+          </p>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="section">
-            <div class="container">
-                <section>
-                    <p class="intro-text" style="padding: 40px; color: wheat">
-                        Hi! Once agin, my name is Daniel Kareti.
-                        I’m a software engineer with a strong foundation in embedded systems, 
-                        machine learning, and software development. 
-                        
-                    </p>
+    <!-- ===== ABOUT CONTENT ===== -->
+    <section class="about-sections">
+      <div class="about-sections-inner">
 
-                        <div style="text-align: center;">
-                            <img src="../GradPhotoMission.jpg" style="max-width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 40px;">
-                        </div>  
-                </section>
-                
-                
-                    <h3 class="section-title" style="color: darkgoldenrod; border-color: beige;">Education</h3>
-                    <p class="intro-text" style="padding: 40px; color: #f0f0f4; text-align: left;">
-                    
-                        I hold a B.S. in Computer Science and Engineering 
-                       from Santa Clara University (Magna Cum Laude) and am currently pursuing 
-                       a Master of Engineering in Computer Engineering from Dartmouth College.
-                    </p>
-                
-    
-                
-                    <h3 class="section-title" style="color: wheat; border-color: beige;">Career Goals</h3>
-                    <p class="intro-text" style="padding: 40px; color: #f0f0f4; text-align: left;">
-                       I enjoy solving real-world problems and have a particular interest in 
-                       natural language processing, system integration, and 
-                        human-centered technology. I’m comfortable working across the stack, from hardware 
-                        interfaces and databases to conversational frontends.
-                    </p>
-            
-    
-                
-                    <h3 class="section-title" style="color: wheat; border-color: beige;">Experience</h3>
-                    <p class="intro-text" style="padding: 40px; color: #f0f0f4; text-align: left;" >
-                       My experience spans both academic research and industry roles — from 
-                        building performance evaluators for IoT networks and developing user 
-                        authentication systems, to deploying Arduino-based diagnostics and 
-                        crafting conversational AI tools. I've recently developed a financial literacy
-                        chatbot and a neural networks based driving predictor.
-                    </p>
-                
-    
-                <a href="../index.html" class="btn">← Back to Home</a>
+        <div class="about-block">
+          <p class="about-block-label">Education</p>
+          <div>
+            <div class="edu-item">
+              <p class="edu-degree">Master of Engineering — Computer Engineering</p>
+              <p class="edu-school">Dartmouth College &nbsp;·&nbsp; In progress</p>
             </div>
-        </section>
-    </main>
-
-    
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Daniel Kareti. All rights reserved.</p> 
-            <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-                     alt="LinkedIn" 
-                     style="width: 32px; height: 32px; fill: white;">
-            </a>
-            <a href="mailto:danielkareti@gmail.com" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
-                     alt="Email" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
-            <a href="https://github.com/dkareti" target="_blank" class="link">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
-                     alt="GitHub" 
-                     style="width: 32px; height: 32px; filter: invert(1);">
-            </a>
+            <div class="edu-item">
+              <p class="edu-degree">B.S. in Computer Science and Engineering</p>
+              <p class="edu-school">Santa Clara University</p>
+              <span class="edu-note">Magna Cum Laude</span>
+            </div>
+          </div>
         </div>
-    </footer>
 
+        <div class="about-block">
+          <p class="about-block-label">Interests</p>
+          <div>
+            <p class="about-block-title">What drives me</p>
+            <p class="about-block-body">
+              I have a particular interest in natural language processing, system integration, 
+              and human-centered technology. I enjoy solving real-world problems and building tools 
+              that non-technical users can actually benefit from.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-block">
+          <p class="about-block-label">Experience</p>
+          <div>
+            <p class="about-block-title">Academic research &amp; industry work</p>
+            <p class="about-block-body">
+              My experience spans both academic research and industry roles — from building performance 
+              evaluators for IoT networks and developing user authentication systems, to deploying 
+              Arduino-based diagnostics and crafting conversational AI tools.
+            </p>
+            <p class="about-block-body">
+              Most recently I've developed a financial literacy chatbot using a RAG pipeline and a 
+              deep learning driving behavior predictor using CNN-LSTM architectures.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Daniel Kareti. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/daniel-kareti-494a93219/" target="_blank" aria-label="LinkedIn">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:danielkareti@gmail.com" aria-label="Email">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        </a>
+        <a href="https://github.com/dkareti" target="_blank" aria-label="GitHub">
+          <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" onclick="scrollToTop()" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="../scripts/main.js"></script>
 </body>
 </html>
