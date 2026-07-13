@@ -91,57 +91,48 @@
     // ============================================================
     const projects = [
       {
+        title: "Distributed Multi-Agent Maze Mapping",
+        description: "A fully decentralized system where 4 networked robots collaboratively map a 16×16 maze in real time — no central controller, no shared memory. Built the navigation logic (floodfill/BFS) and distributed communication layer (peer-to-peer RPC broadcasting of wall discoveries and positions). Achieved 100% maze coverage in simulation, verified fault tolerance by killing an agent mid-run and confirming the others kept exploring uninterrupted, then validated on physical hardware (Raspberry Pi + robots).",
+        tech: ["Go", "RPC", "Distributed Systems", "Raspberry Pi", "Floodfill/BFS", "Fault Tolerance"],
+        image: "",
+        demo: "https://youtu.be/K-zJdEu3Gw8",
+        github: "",
+        live: ""
+      },
+      {
         title: "Financial Chatbot (FinLitGPT)",
         description: "An AI-powered web app that answers personal finance questions (IRAs, credit scores, investing) using a Retrieval-Augmented Generation pipeline combining a local knowledge base with OpenAI's GPT. Built for non-technical users with a clean, intuitive frontend.",
         tech: ["Flask", "OpenAI API", "RAG", "SentenceTransformers", "Web Scraping", "JavaScript", "Jinja2"],
-        image: "../assets/images/FinancialGPT.png",
+        image: "",
         demo: "https://youtu.be/IYf8HLykLwY",
-        github: "https://github.com/dkareti/finLitGPT",
+        github: "",
         live: "https://finlitgpt.onrender.com"
       },
       {
         title: "Driver Behavior Predictor",
         description: "A deep learning pipeline that classifies driver behaviors — acceleration, braking, turning, cruising — from time-series vehicle telemetry. Compared CNN, LSTM, and hybrid CNN-LSTM architectures; the final model achieved 100% accuracy on a balanced test set.",
         tech: ["TensorFlow / Keras", "Python", "CNNs", "LSTMs", "Scikit-learn"],
-        image: "../assets/images/thumbnailDLDrivingPredictor.png",
+        image: "",
         demo: "https://youtu.be/iijE0y7GeXo",
-        github: "https://github.com/dkareti/deep_learning_driving_predictor",
+        github: "",
         live: ""
       },
       {
         title: "Devotional Web App",
         description: "I created a webpage that provides a few Bible reading portions — adapted from John Piper's Desiring God yearly Bible plan. Users pick any day of the year and get the corresponding passages, plus two buttons that copy tailored AI prompts to the clipboard for clarification or devotional generation.",
         tech: ["Flask", "JavaScript", "PDF Parsing", "Regex", "Prompt Engineering", "Jinja2"],
-        image: "../assets/images/bible-devo-webpage.png",
+        image: "",
         demo: "https://youtu.be/DOFEm896hTs",
-        github: "https://github.com/dkareti/bible-in-a-year-reading",
+        github: "",
         live: "https://daily-scripture-bible-app.onrender.com/"
       },
       {
         title: "Mental Health Check-in Assistant",
         description: "A sentiment-aware conversational assistant built with Dialogflow and Flask. Tracks mood over time in a SQLite database, summarizes weekly trends, and provides empathetic context-aware feedback. Tested with live webhooks via ngrok.",
         tech: ["Dialogflow", "Flask", "NLTK", "SQLite", "ngrok"],
-        image: "../assets/images/database-storage_mental_health_assistant.png",
-        demo: "https://youtu.be/_Kf-zIH0WRU",
-        github: "https://github.com/dkareti/mental-health-checkin-assistant",
-        live: ""
-      },
-      {
-        title: "LLM-Powered Career Tagline Generator",
-        description: "An AI tool that generates one-sentence, third-person LinkedIn taglines from a user's job title, skills, and degree. Fine-tuned FLAN-T5 (flan-t5-base) to produce concise, grammatically correct branding statements.",
-        tech: ["Flask", "Hugging Face Transformers", "PyTorch", "Jinja2"],
-        image: "../assets/images/tagline_gen_photo.png",
-        demo: "../demos/tagline_gen_demo.mov",
-        github: "https://github.com/dkareti/llm_resume_insights",
-        live: "https://llm-tagline-generator.onrender.com"
-      },
-      {
-        title: "Flask User Verification",
-        description: "A web app that validates user name and birthday, places the user into an age group using an embedded ML classifier, and supports replaying the flow. An introduction to combining Flask with machine learning and managing serialized models with joblib.",
-        tech: ["Flask", "Scikit-learn", "joblib", "Jinja2"],
         image: "",
-        demo: "../demos/Project Demo-FlaskAPP.mov",
-        github: "https://github.com/dkareti/flask-age-checker",
+        demo: "https://youtu.be/_Kf-zIH0WRU",
+        github: "",
         live: ""
       },
       {
@@ -150,18 +141,9 @@
         tech: ["Swift", "Xcode", "iOS Simulator"],
         image: "",
         demo: "../demos/iphone_photo_selector_demo.mov",
-        github: "https://github.com/dkareti/photoSearch_app",
+        github: "",
         live: ""
       },
-      {
-        title: "Genre Story Starter",
-        description: "A dynamic Flask app that generates creative sentence starters based on user-selected genres (Adventure, Sci-Fi, Fantasy). Features copy-to-clipboard, a responsive gradient UI, and is fully deployed on Render.",
-        tech: ["Flask", "Render", "JavaScript", "Jinja2"],
-        image: "../assets/images/image_story_gen.png",
-        demo: "",
-        github: "https://github.com/dkareti/text-story-generator",
-        live: "https://text-story-generator.onrender.com/"
-      }
     ];
 
     // ============================================================
@@ -172,7 +154,7 @@
       grid.innerHTML = projects.map(p => {
         const thumbnail = p.image
           ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
-          : `<div class="project-no-image">{ }</div>`;
+          : ``;
 
         const techTags = p.tech.map(t => `<li>${t}</li>`).join('');
 
@@ -184,7 +166,7 @@
 
         return `
           <article class="project-card">
-            <div class="project-thumbnail-wrap">${thumbnail}</div>
+            ${thumbnail}
             <div class="project-body">
               <h2 class="project-title">${p.title}</h2>
               <p class="project-desc">${p.description}</p>
