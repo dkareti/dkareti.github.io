@@ -50,12 +50,12 @@
           <!-- Cards are injected by JavaScript below -->
         </div>
 
-        <!-- How to add a project -->
+        <!-- How to add a project
         <div class="add-project-hint" style="margin-top: 32px;">
           <strong>Adding a new project?</strong><br>
           Open <code>projects.html</code>, find the <code>const projects = [...]</code> array near the bottom, 
           and add a new object following the same pattern. The card will appear automatically.
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -91,6 +91,15 @@
     // ============================================================
     const projects = [
       {
+        title: "Financial Chatbot (FinLitGPT)",
+        description: "An AI-powered web app that answers personal finance questions (IRAs, credit scores, investing) using a Retrieval-Augmented Generation pipeline combining a local knowledge base with OpenAI's GPT. Built for non-technical users with a clean, intuitive frontend.",
+        tech: ["Flask", "OpenAI API", "RAG", "SentenceTransformers", "Web Scraping", "JavaScript", "Jinja2"],
+        image: "",
+        demo: "https://youtu.be/IYf8HLykLwY",
+        github: "",
+        live: "https://finlitgpt.onrender.com"
+      },
+      {
         title: "Distributed Multi-Agent Maze Mapping",
         description: "A fully decentralized system where 4 networked robots collaboratively map a 16×16 maze in real time — no central controller, no shared memory. Built the navigation logic (floodfill/BFS) and distributed communication layer (peer-to-peer RPC broadcasting of wall discoveries and positions). Achieved 100% maze coverage in simulation, verified fault tolerance by killing an agent mid-run and confirming the others kept exploring uninterrupted, then validated on physical hardware (Raspberry Pi + robots).",
         tech: ["Go", "RPC", "Distributed Systems", "Raspberry Pi", "Floodfill/BFS", "Fault Tolerance"],
@@ -100,13 +109,13 @@
         live: ""
       },
       {
-        title: "Financial Chatbot (FinLitGPT)",
-        description: "An AI-powered web app that answers personal finance questions (IRAs, credit scores, investing) using a Retrieval-Augmented Generation pipeline combining a local knowledge base with OpenAI's GPT. Built for non-technical users with a clean, intuitive frontend.",
-        tech: ["Flask", "OpenAI API", "RAG", "SentenceTransformers", "Web Scraping", "JavaScript", "Jinja2"],
+        title: "MCP Server for Google Drive (BizData)",
+        description: "Built an MCP server from scratch using Anthropic's Model Context Protocol documentation shortly after the protocol's release, at my manager's request. Integrated the server with the Google Drive API and used SambaNova as the underlying LLM to translate natural-language requests into file actions — letting users create, delete, and modify files through plain-language commands instead of manual API calls. Validated end-to-end functionality through systematic testing in Postman against a dev account.",
+        tech: ["MCP", "Google Drive API", "SambaNova", "LLM Tool-Calling", "Postman", "REST APIs"],
         image: "",
-        demo: "https://youtu.be/IYf8HLykLwY",
+        demo: "",
         github: "",
-        live: "https://finlitgpt.onrender.com"
+        live: ""
       },
       {
         title: "Driver Behavior Predictor",
@@ -118,15 +127,6 @@
         live: ""
       },
       {
-        title: "Devotional Web App",
-        description: "I created a webpage that provides a few Bible reading portions — adapted from John Piper's Desiring God yearly Bible plan. Users pick any day of the year and get the corresponding passages, plus two buttons that copy tailored AI prompts to the clipboard for clarification or devotional generation.",
-        tech: ["Flask", "JavaScript", "PDF Parsing", "Regex", "Prompt Engineering", "Jinja2"],
-        image: "",
-        demo: "https://youtu.be/DOFEm896hTs",
-        github: "",
-        live: "https://daily-scripture-bible-app.onrender.com/"
-      },
-      {
         title: "Mental Health Check-in Assistant",
         description: "A sentiment-aware conversational assistant built with Dialogflow and Flask. Tracks mood over time in a SQLite database, summarizes weekly trends, and provides empathetic context-aware feedback. Tested with live webhooks via ngrok.",
         tech: ["Dialogflow", "Flask", "NLTK", "SQLite", "ngrok"],
@@ -134,6 +134,15 @@
         demo: "https://youtu.be/_Kf-zIH0WRU",
         github: "",
         live: ""
+      },
+      {
+        title: "Devotional Web App",
+        description: "I created a webpage that provides a few Bible reading portions — adapted from John Piper's Desiring God yearly Bible plan. Users pick any day of the year and get the corresponding passages, plus two buttons that copy tailored AI prompts to the clipboard for clarification or devotional generation.",
+        tech: ["Flask", "JavaScript", "PDF Parsing", "Regex", "Prompt Engineering", "Jinja2"],
+        image: "",
+        demo: "https://youtu.be/DOFEm896hTs",
+        github: "",
+        live: "https://daily-scripture-bible-app.onrender.com/"
       },
       {
         title: "iPhone Photo Selector",
